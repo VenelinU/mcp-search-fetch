@@ -59,7 +59,7 @@ After adding MCP in llama-server Web-UI:
 
 * Edit `searxng/core-config/settings.yml` to configure the SearXNG, such as disabling certain search engines.
 * Edit the docker compose files to set environment variables to change the port mappings or other configurations.
-** Use `.env.example` to create `.env` file and edit it to your needs.
+  * Use `.env.example` to create `.env` file and edit it to your needs.
 
 ---
 
