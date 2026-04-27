@@ -31,9 +31,12 @@ Add the SSE endpoint to your client configuration (e.g., `llama.cpp server`):
 MCP URL: http://localhost:8000/mcp
 
 Add MCP in llama-server Web-UI:
+
 ![Adding MCP in llama-server](./assets/llama-server-add-mcp-screenshot.png)
 
+
 After adding MCP in llama-server Web-UI:
+
 ![After adding MCP in llama-server](./assets/llama-server-mcp-added-screenshot.png)
 
 ---
