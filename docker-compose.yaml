@@ -1,0 +1,15 @@
+include:
+  - searxng/searxng-compose.yaml
+
+services:
+  mcp-search-fetch:
+    build: ./mcp-search-fetch
+    container_name: mcp-search-fetch
+    ports:
+      - "8000:8000"
+    environment:
+      - MCP_SEARCH_FETCH_SEARXNG_BASE_URL=${MCP_SEARCH_FETCH_SEARXNG_BASE_URL:-http://searxng:8080}
+      - MCP_SEARCH_FETCH_MCP_HOST=${MCP_SEARCH_FETCH_MCP_HOST:-0.0.0.0}
+      - MCP_SEARCH_FETCH_MCP_PORT=${MCP_SEARCH_FETCH_MCP_PORT:-8000}
+      - MCP_SEARCH_FETCH_LOG_LEVEL=${MCP_SEARCH_FETCH_LOG_LEVEL:-INFO}
+      - MCP_SEARCH_FETCH_LOG_FILE=${MCP_SEARCH_FETCH_LOG_FILE:-}
